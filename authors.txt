@@ -1,0 +1,32 @@
+Ben Blankley 
+  *  wrote the initial developer offering (0.10)
+  *  fixed compiler errors (0.12)
+  *  added option to append timestamp to saved game filename (0.13)
+  *  put all dialog into a uniform format (0.13)
+  *  corrected loop flow problems with area intro text (0.13)
+  *  small HP and GP corrections (0.14)
+  *  added items subroutine (0.14)
+  *  made saleable general store items (0.14)
+  *  added magic points (0.14)
+  *  added magic to battle system (0.16)
+  *  added Guidebook and Baths (0.17)
+  *  added debug mode, status effects, other fixes (0.18)
+  *  added list of CRPG cliches, fixed opening nonexistent files (0.19)
+
+Debarijit (Greg) Chandra
+  *  increased robustness of save/load mechanism (0.11)
+
+Emily (Emi) Jones
+  *  added detail to world, fixed grammar errors (0.12)
+  *  wrote beginning of story (0.12)
+  *  wrote more story, fixed outstanding errors (0.17)
+
+Daniel Harper
+  *  improved user interface (0.12)
+  *  added selling of weapons (0.12)
+  *  added Inn & General Store (0.13)
+  *  added option in Bar to drink (0.14)
+
+Thomas (Tom) Atterbury
+  *  fixed several outstanding errors in various routines (0.15)
+  *  added solid beginning to magic subsystem (0.15)

@@ -1,0 +1,135 @@
+2005-06-08  Ben Blankley  <chickenmonger  gmail.com>
+
+         * First release to developer group
+
+2005-06-09  Debarijit (Greg) Chandra <gregman756  gmail.com>
+
+         * Revisions to the LOAD and SAVE subroutines
+         * Calling of stated subroutines
+
+2005-06-09  Ben Blankley  <chickenmonger  gmail.com>
+         * Fixed a bug with LOAD and SAVE subroutines
+         * Added variable description list and license files
+         * Debugged lots of contributed code
+	 * Added a 200 element vector for inventory purposes
+
+2005-06-09 Emily (Emi) Jones <emi.jones  gmail.com>
+
+         * added write statements to some townsquare choices, to add detail to the world
+         * fixed a grammar error "it under certain conditions; view license.txt... rather than it undercertain..."
+         * added text to town square choice to improve sentance flow
+         * added townsquare option; commons, where storyline will begin
+         * began theatre and pub subroutines
+         * wrote beginning of quest (PubUpstairs subroutine)
+
+2005-06-09 Daniel Harper <dbharper  iastate.edu>
+
+         * improved user interface capabilities
+         * refined Armory/Weaponry section
+         * Added selling of weapons
+
+2005-06-10 Daniel Harper <dbharper  iastate.edu>
+
+         * added Inn and General Store
+
+2005-06-12 Ben Blankley <chickenmonger  gmail.com>
+
+         * added option to append timestamp to saved game filename
+         * added check for file existence in load routine
+         * put all dialog into a uniform format
+         * corrected loop flow problems with area intro text
+
+2005-06-13 Ben Blankley <chickenmonger  gmail.com>
+
+         * added cross-platform file listing code to load routine
+	 * current version compiles cleanly on gfortran, and g95
+         * does not compile with Intel Fortran compiler
+	 * changed out time() function for date_and_time() subroutine
+
+2005-06-16 Daniel Harper <dbharper  iastate.edu>
+
+         * added option in Bar to drink
+
+2005-06-16 Ben Blankley <chickenmonger  gmail.com>
+
+         * scaled enemy HP to hero level
+	 * increase of GP after each battle
+         * changed format of saved game file
+
+2005-06-27 Ben Blankley <chickenmonger  gmail.com>
+
+         * tweaked enemy HP calculation for higher levels
+         * tweaked battle mechanics
+
+2005-06-30 Ben Blankley <chickenmonger  gmail.com>
+
+         * added items subroutine & general store
+         * added magic points, but no spells yet
+
+2005-07-11 Thomas (Tom) Atterbury <tatter.isu  gmail.com>
+
+         * added basis for magic subsystem
+         * fixed several outstanding errors in subroutines
+
+2005-07-12 Ben Blankley <chickenmonger  gmail.com>
+
+         * added Monastery to list available magic
+	 * added magic to battle system
+
+2005-07-14 Emily (Emi) Jones <emi.jones  gmail.com>
+
+         * wrote additional story
+	 * small style changes
+         * added Airport for intra-kingdom travel
+
+2005-07-14 Ben Blankley <chickenmonger  gmail.com>
+
+         * added Guidebook and Baths
+         * generalized various town places to account for differing towns
+	 * wrote beginnings of a walkthrough
+	 * various other small tweaks
+
+2005-07-26 Ben Blankley <chickenmonger  gmail.com>
+
+         * added status effects (only poison and mute)
+	 * increased space with which to print statistics from 3 digits to 4
+	 * simplified how enemy HP is calculated
+         * rebalanced battle system
+	 * prevented player from causing negative damage
+	 * changed random inaction during battle to generic attack
+	 * reduced severity of enemy self-hit
+	 * player now gets randomized (1...Current Level) XP at end of battle
+	 * play tested to at least level 10
+	 * fixed allocation of HeroAttributes variable in some routines
+	 * Monks can now cure status effects, for a price
+	 * Added Debug mode to change any character variable, or to auto-levelup
+	   Type "x" at town square to access
+	 * Identified which lines prohibit compilation with Intel Fortran. To
+	 use this compiler (ifc or ifort on linux, ifl on windows), compile
+	 the file rpg(version number)_intel.f90. The offending lines are
+	 commented out in this version of the source. (For those interested,
+	 the lines are CALL SYSTEM lines)
+	 
+2005-07-31 Ben Blankley <chickenmonger  gmail.com>
+
+         * trapped user in Load routine when save file is not found, rather 
+           than the previous behavior (loading absolute garbage) by using a
+	   well-known universal constant
+         * added Grand List of CRPG Cliches to guidebook
+	 * created a patch file for Intel compilers, rather than have an
+           entirely separate codebase.
+	   
+2005-08-10 Ben Blankley <chickenmonger  gmail.com>
+
+         * split sourcecode into several separate files
+         * created a Makefile that works with Gfortran on Windows and Intel
+           Fortran on Linux. Edit the Makefile to specify your chosen
+	   compiler.
+	 * added graphical HP/MP display during battle
+           
+
+2005-12-16 Ben Blankley <chickenmonger  gmail.com>
+
+         * split every single subroutine into its own file
+         * changed out entire battle mechanics system to a simpler one
+	 * fixed a few bugs, but removed lots of features in the process

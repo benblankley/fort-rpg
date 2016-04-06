@@ -1,0 +1,6 @@
+FORT-RPG Walkthrough
+
+* Get theatre ticket from Ticket Booth in Commons
+* Go to theatre
+* Go to bar, ask Bartender "How's business", say yes.
+* Go to airport 

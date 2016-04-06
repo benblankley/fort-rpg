@@ -1,0 +1,25 @@
+Three available occupations:
+Fighter
+Sorceror
+Dancer
+
+Character starts by choosing their top two occupations
+Roll 2d4+2 for ability for occupation 1
+Roll 1d4+2 for ability for occupation 2
+Roll 1d4 for ability for occupation 3
+
+HP = sum of all ability
+Starting money= ability of occupation 1 * 100
+
+A "test" requires a 1d12 roll. If your ability is higher than that, success.
+
+Leveling up:
+make a roll for each occupation. If all three are higher, then each ability is +1.
+
+Battle:
+50% chance of ambush or preemptive attack
+
+Roll a 1d12 against enemy's ability. Results:
++0, +1 roll 1d4 for damage
++2, +3 roll 1d4+2 for damage
++4 or above roll 2d4 for damage
