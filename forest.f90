@@ -57,8 +57,7 @@ ELSE IF (Choice == "r" .OR. Choice == "R" .OR. Choice=="rest") THEN
  WRITE (*,*) "All HP and MP restored!"
  WRITE (*,*)
 ELSE IF (Choice == "s" .OR. Choice == "S" .OR. Choice=="statistics") THEN
-! CALL HeroStats(HeroAttributes,HeroLuck,HeroHP,HeroGP,HeroWeapon,HeroXP, &
-!                HeroMaxHP,HeroName,HeroLevel,HeroMP,HeroMaxMP)
+  CALL HeroStats(heroabil, herohp, herohptot, HeroName, Backpack, TownName)
 ELSE IF (Choice == "g" .OR. Choice == "G" .OR. Choice=="go" .OR. Choice=="go back") THEN
  RETURN
 ELSE IF (Choice == "i" .OR. Choice == "I" .OR. Choice=="item") THEN
