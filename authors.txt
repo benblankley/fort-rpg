@@ -34,3 +34,5 @@ Thomas (Tom) Atterbury
 Cath Janzen
   *  added cliches
   *  added option in Bar to drink
+  *  added item in General Store
+  *  updated authors file
