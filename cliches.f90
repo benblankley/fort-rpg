@@ -15,4 +15,10 @@ WRITE (*,'(1X,A)') "oldster appears and wearily states 'That's all well and good
 WRITE (*,'(1X,A)') "within walking distance if you have the time.' The oldster steals the key to  "
 WRITE (*,'(1X,A)') "the transport item and disappears.                                            "
 
+CASE (2)
+WRITE (*,'(1X,A)') "Gift of Gab Rule"
+WRITE (*,('1X,A)') "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
+WRITE (*,('1X,A)') "People play characters whose articulateness is inversely proportional to      "
+WRITE (*,('1X,A)') "their own.                                                                    "
+
 END SUBROUTINE Cliches
