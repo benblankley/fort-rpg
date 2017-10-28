@@ -30,3 +30,9 @@ Daniel Harper
 Thomas (Tom) Atterbury
   *  fixed several outstanding errors in various routines (0.15)
   *  added solid beginning to magic subsystem (0.15)
+
+Cath Janzen
+  *  added cliches
+  *  added option in Bar to drink
+  *  added item in General Store
+  *  updated authors file
