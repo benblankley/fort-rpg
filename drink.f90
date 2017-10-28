@@ -6,10 +6,10 @@ CHARACTER :: Choice
 CHARACTER(20), INTENT(INOUT) :: HeroName
 CHARACTER(30), INTENT(INOUT) :: TownName
 
-WRITE(*,*) "Ale is 2 GP, and brandy is 4 GP."
+WRITE(*,*) "Ale is 2 GP, brandy is 4 GP and mead is 4 GP."
 WRITE(*,*) "What do you want to buy?"
 WRITE(*,*) "(A)le           (W)hiskey"
-WRITE(*,*) "(N)othing"
+WRITE(*,*) "(M)ead          (N)othing"
 WRITE(*,'(1X,A,I7,A)') "Remember, you have ", Backpack(3)," GP."
 READ(*,*) Choice
 IF(Choice=="A" .OR. Choice=="a" .OR. Choice=="ale") THEN
@@ -28,6 +28,16 @@ ELSE IF (Choice=="w" .OR. Choice=="W" .OR. Choice=="whiskey") THEN
      WRITE(*,*)
      WRITE(*,*) "**Four HP gained!**"
      WRITE(*,*)
+ELSE IF (Choice=="m" .OR. Choice=="M" .OR. Choice=="mead") THEN
+     Backpack(3)=Backpack(3)-4
+     HeroHP=HeroHP+5
+     WRITE(*,*) "You drain the fermented honey drink in one gulp. "
+     WRITE(*,*) "Oops! There's still a drunk bee at the bottom "
+     WRITE(*,*) "of the glass. Oh well, extra protein!"
+     WRITE(*,*)
+     WRITE(*,*) "**Five HP gained!**"
+     WRITE(*,*)
+     
 ELSE IF (Choice=="N" .OR. Choice=="n" .OR. Choice=="nothing") THEN
      WRITE(*,*) "BARTENDER: Then why'd you ask me about drinks?"
 END IF
