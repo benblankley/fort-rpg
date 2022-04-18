@@ -76,7 +76,7 @@ IF (Choice == "G" .OR. Choice == "g") THEN
 ELSE IF (Choice == "D" .OR. Choice == "d") THEN
  WRITE (*,*) "Lady Janelle's eyes fill with tears and she shakes her head."
 ELSE IF (Choice == "I" .OR. Choice == "i") THEN
- WRITE (*,*) "Lady Janelle smiles, amused by your inability to hid you interest in the quest."
+ WRITE (*,*) "Lady Janelle smiles, amused by your inability to hide your interest in the quest."
 ELSE IF (Choice == "W" .OR. Choice == "w") THEN
  WRITE (*,*) "Lady Janelle looks uncertain, but permits you to kiss her hand."
 ELSE IF (Choice == "H" .OR. Choice == "h") THEN
