@@ -1,0 +1,52 @@
+program adventure
+  implicit none
+  integer :: health, strength, enemy_health
+  character(50) :: player_name, enemy_name
+  integer :: choice
+
+  ! initialize player stats
+  health = 100
+  strength = 10
+  player_name = "Adventurer"
+
+  ! start the game
+  write(*,*) "Welcome to FORT-RPG, ", player_name
+  write(*,*) "You find yourself in a dark dungeon. A goblin blocks your path."
+
+  ! initialize enemy stats
+  enemy_name = "Goblin"
+  enemy_health = 50
+
+  ! game loop
+  do while (health > 0)
+    write(*,*) "What will you do?"
+    write(*,*) "1. Attack the ", enemy_name
+    write(*,*) "2. Run away"
+    read(*,*) choice
+
+    if (choice == 1) then
+      ! player attacks the enemy
+      write(*,*) "You attack the ", enemy_name, " with your sword."
+      enemy_health = enemy_health - strength
+      write(*,*) "The ", enemy_name, " has ", enemy_health, " health left."
+
+      ! enemy attacks the player
+      write(*,*) "The ", enemy_name, " attacks you with its rusty dagger."
+      health = health - 10
+      write(*,*) "You have ", health, " health left."
+
+      ! check if enemy is defeated
+      if (enemy_health <= 0) then
+        write(*,*) "You have defeated the ", enemy_name
+        exit
+      end if
+    else if (choice == 2) then
+      ! player runs away
+      write(*,*) "You run away from the ", enemy_name
+      exit
+    end if
+  end do
+
+  ! game over
+  write(*,*) "Game over, ", player_name
+end program adventure
